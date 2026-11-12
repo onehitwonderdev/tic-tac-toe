@@ -201,6 +201,12 @@ a { -webkit-tap-highlight-color: transparent; }
   }
 }
 
+@media (max-width: 639px) and (max-height: 700px) {
+  .game-board {
+    width: min(100%, 35rem, 86vw, 34svh);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

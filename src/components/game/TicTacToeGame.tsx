@@ -20,9 +20,9 @@ export function TicTacToeGame() {
   const isGameOver = game.outcome !== "playing";
 
   return (
-    <main className="min-h-screen px-5 pb-8 pt-6 sm:px-8 sm:pt-8">
-      <div className="mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-6xl flex-col">
-        <header className="site-header flex items-center justify-between pb-5">
+    <main className="min-h-screen px-5 pb-5 pt-4 sm:px-8 sm:pb-8 sm:pt-8">
+      <div className="mx-auto flex min-h-[calc(100vh-2.25rem)] w-full max-w-6xl flex-col sm:min-h-[calc(100vh-4rem)]">
+        <header className="site-header flex items-center justify-between pb-3 sm:pb-5">
           <div className="inline-flex items-center gap-3">
             <span aria-hidden="true" className="brand-mark">
               <span />
@@ -40,11 +40,11 @@ export function TicTacToeGame() {
         </header>
 
         <div
-          className="grid flex-1 items-center gap-10 py-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:py-12"
+          className="grid flex-1 items-center gap-5 py-5 sm:gap-10 sm:py-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:py-12"
           id="game"
         >
           <section aria-labelledby="game-title" className="lg:pb-4">
-            <p className="mb-5 text-sm font-medium text-lime-300">
+            <p className="mb-3 text-sm font-medium text-lime-300 sm:mb-5">
               Pass the screen
             </p>
             <h1
@@ -53,18 +53,18 @@ export function TicTacToeGame() {
             >
               Tic-Tac-Toe
             </h1>
-            <p className="mt-6 max-w-md text-base leading-7 text-stone-400 sm:text-lg sm:leading-8">
+            <p className="mt-3 max-w-md text-base leading-6 text-stone-400 sm:mt-6 sm:text-lg sm:leading-8">
               Take turns placing X and O. Make three in a row to win.
             </p>
 
-            <p className="mt-10 max-w-sm text-sm leading-6 text-stone-400 sm:mt-14">
+            <p className="mt-10 hidden max-w-sm text-sm leading-6 text-stone-400 sm:mt-14 sm:block">
               Use the arrow keys to move around the board. Press Enter or Space
               to place your mark.
             </p>
           </section>
 
           <section aria-label="Game board and controls" className="mx-auto w-full max-w-[35rem]">
-            <div className="game-toolbar mb-4 flex items-center justify-between gap-4 pb-4">
+            <div className="game-toolbar mb-3 flex items-center justify-between gap-4 pb-3 sm:mb-4 sm:pb-4">
               <div className="flex min-w-0 items-center gap-3">
                 <div aria-hidden="true" className="turn-mark">
                   {game.outcome === "draw" ? (
