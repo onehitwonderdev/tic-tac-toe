@@ -1,0 +1,47 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+
+# build output
+/build
+
+# local env files
+.env*
+!.env.example
+!.env.*.example
+
+# local AI tools, prompts, and generated design reviews
+/.agent/
+/.agents/
+/.claude/
+/.codex/
+/.cursor/
+/.devin/
+/.gemini/
+/.impeccable/
+/.opencode/
+/.pi/
+/.taste-skill/
+/AGENTS.md
+/prompt.md
+
+# local platform and temporary files
+/.vercel/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+coverage/
+*.tmp
+*.temp
+Thumbs.db
+.DS_Store
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
