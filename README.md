@@ -46,11 +46,13 @@ The game-rule tests cover every winning line for both players, turns, invalid mo
 
 ## Deploy
 
-Build and run the production server with:
+The application is deployed on Vercel: [tic-tac-toe-kohl-beta.vercel.app](https://tic-tac-toe-kohl-beta.vercel.app/).
+
+To build and run the production server locally:
 
 ```bash
 npm run build
 npm start
 ```
 
-The app can be hosted on a Node.js-compatible platform that supports Next.js. No deployment has been performed.
+The app is deployed on Vercel, which supports Next.js deployments.
